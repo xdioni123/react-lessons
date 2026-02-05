@@ -1,12 +1,13 @@
 import React from "react";
-import {Text, StyleSheet, View} from "react-native";
+import { Text, StyleSheet, View } from "react-native";
 
-const MainScreen = () => {
+
+const MainScreen =() => {
     return <View style={styles.container}>
-        <Text style={styles.textStyles}>This is the Main Screen</Text>
+        <Text style={styles.textStyles}>This is Main Screen</Text>
     </View>
-
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -19,5 +20,6 @@ const styles = StyleSheet.create({
         fontSize: 50,
     }
 });
+
 
 export default MainScreen;
