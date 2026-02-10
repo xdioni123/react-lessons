@@ -1,6 +1,6 @@
-npx create-expo-app lesson1 --template (folder i ri)
-npx expo install react-native-web react-dom @expo/metro-runtime (per me perdor n web browser)
-npm i -g @expo/ngrok (per telefon e para)
+npx create-expo-app lesson1 --template (folder i ri, 1)
+npx expo install react-native-web react-dom @expo/metro-runtime (per me perdor n web browser, 2)
+npm i -g @expo/ngrok (per telefon e para, 3)
 npx expo start --tunnel(per telefon)
-npx expo install react-native-screens react-native-safe-area-context
-npm install @react-navigation/native @react-navigation/stack
+npx expo install react-native-screens react-native-safe-area-context (screens pages navigations/menagjment, 5)
+npm install @react-navigation/native @react-navigation/stack (library install for navigation, 4)
