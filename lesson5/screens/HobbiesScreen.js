@@ -15,6 +15,9 @@ export default function HobbiesScreen() {
       <Text style={styles.title}>My Hobbies</Text>
       <FlatList
         data={hobbies}
+        horizontal={false}
+        showsHorizontalScrollIndicator={true}
+        contentContainerStyle={styles.listContent}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View style={styles.item}>
