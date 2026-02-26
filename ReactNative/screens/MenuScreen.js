@@ -11,7 +11,12 @@ const MenuScreen = () => {
              title="Go to List Screen"
              color = "purple"
              onPress = {() => console.log('Button Clicked: ', counter++)}
-                        />
+            />
+              <TouchableOpacity style={styles.btn}
+                onPress={() => useLinkProps.navigation.navigate('Students')}
+              >
+                <Text style={styles.btnText}>Go to studnets Screen</Text>
+              </TouchableOpacity>  
         </View>
     );
 };
@@ -21,6 +26,17 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginVertical: 20,
     fontSize: 20
+  },
+  btn: {
+    backgroundColor: '#3446eb',
+    marginVertical: 10,
+    paddingVertical: 7
+  },
+  btnText: {
+    color: "white",
+    fontsize: 15,
+    textTransform: 'uppercase',
+    textAlign: 'center'
   }
   });
 
