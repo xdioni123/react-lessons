@@ -1,7 +1,7 @@
 import React from "react";
 import {View, Text, StyleSheet, Button, TouchableOpacity} from 'react-native';
 
-const MenuScreen = () => {
+const MenuScreen = (props) => {
     return (
         <View>
             <Text style={StyleSheet.text}>
@@ -10,10 +10,10 @@ const MenuScreen = () => {
             <Button
              title="Go to List Screen"
              color = "purple"
-             onPress = {() => console.log('Button Clicked: ', counter++)}
+             onPress = {() => props.navigation.navigate('List')}
             />
               <TouchableOpacity style={styles.btn}
-                onPress={() => useLinkProps.navigation.navigate('Students')}
+                onPress={() => props.navigation.navigate('Students')}
               >
                 <Text style={styles.btnText}>Go to studnets Screen</Text>
               </TouchableOpacity>  
