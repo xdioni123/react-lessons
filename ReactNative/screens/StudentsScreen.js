@@ -1,6 +1,5 @@
 import React from "react";
 import {Text, View, StyleSheet} from "react-native";
-import StudnetDetails from "../components/StudentDetails";
 import StudentDetails from "../components/StudentDetails";
 
 const StudentsScreen = () => {
