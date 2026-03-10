@@ -31,20 +31,43 @@ const Projects = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    margin: 5,
-    borderRadius: 10,
+    marginVertical: 20,
+    paddingHorizontal: 20,
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 15,
+  },
+  title:{
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  viewAll: {
+    fontSize: 14,
+    color: '#fff',
+    backgroundColor: '#ffD700',
+    paddingVertical: 8,
+    paddingHorizontal: 15,
+    borderRadius: 15,
+    fontWeight: '600',
     overflow: 'hidden',
-    backgroundColor: '#eee',
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.1,
-    shadowRadius: 2,
-    elevation: 2,
   },
-  projectImage: {
-    width: 150, 
-    height: 100, 
+  scrollView: {
+    marginLeft: -20,
+    paddingLeft: 20,
   },
+  projectsContainer: {
+    flexDirection: 'row',
+    gap: 15,
+  },
+  projectCard: {
+    marginRight: 10,
+    borderRadius: 12,
+    overflow: 'hidden',
+  }
 });
 
 export default Project;
