@@ -5,7 +5,7 @@ npx expo start --tunnel(per telefon)
 npx expo install react-native-screens react-native-safe-area-context (screens pages navigations/menagjment, 5)
 npm install @react-navigation/native @react-navigation/stack (library install for navigation, 4)
 npm install @expo/ngrok
-npm install expo@^54.0.0 
+    
 npx expo install --fix 
 npx expo-doctor
 if duplicated dependencies

@@ -12,6 +12,12 @@ const MenuScreen = () => {
              color = "purple"
              onPress = {() => console.log('Button Clicked: ', counter++)}
                         />
+            <TouchableOpacity style={styles.btn}
+              onPress = {() => console.log('TouchableOpacity Clicked: ', counter++)}
+            />
+              <TouchableOpacity style={styles.btn}
+              onPress = {() => console.log('TouchableOpacity Clicked: ', counter++)}
+            ></TouchableOpacity>
         </View>
     );
 };

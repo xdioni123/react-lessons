@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, ScrollView, StyleSheet, Button } from 'react-native';
 import StudentInfo from '../components/StudentInfo';
-import Project from '../components/Projects';
+import Project from '../components/Project';
 
 const ProfileScreen = () => {
   return (
     <View style={styles.container}>
-      <StudentInfo name="JOHN DOE" position="UI/UX Designer" description="We're passionate about creating beatuiful designing for startups & learning brands" profileImage={require('..assets/project3.png')}/>
+      <StudentInfo name="JOHN DOE" position="UI/UX Designer" description="We're passionate about creating beatuiful designing for startups & learning brands" profileImage={require('../assets/project3.png')}/>
       <Project image1={require('../assets/project1.png')} img2={require('../assets/project2.png')}/>
     </View>
   );
