@@ -2,9 +2,14 @@ import React from "react";
 import {Text , StyleSheet, View} from "react-native";
 
 const MainScreen =()=> {
-    return(<View style={styles.test}>
+
+const message = "Hello wrold from out class!"
+    return(
+    <View style={styles.test}>
         <Text style={styles.textStyle}>This is a main screen</Text>
-    </View>);
+        <Text style={styles.textStyle}>{message}</Text>
+    </View>
+    );
 }
 
 const styles = StyleSheet.create({
