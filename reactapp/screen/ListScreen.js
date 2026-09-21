@@ -10,7 +10,7 @@ const students = [
 const ListScreen = () => {
     return (
         <View>
-            <Text>List Screen:</Text>
+            <Text style={styles.title}>List Screen:</Text>
 
             <View style={styles.row}>
                 <Text style={styles.column}>Name</Text>
@@ -39,10 +39,16 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 10,
         borderBottomWidth: 1,
-        borderBottomColor: '#ccc'
+        borderBottomColor: '#ccc',
+        
     },
     column: {
-        width: 100
+        width: 100,
+    },
+    title: {
+        textAlign: 'left',
+        flexDirection: 'row',
+
     }
 });
 
