@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MainScreen from './screen/MainScreen';
 import ListScreen from './screen/ListScreen';
+import ButtonScreen from './screen/ButtonScreen';
 
 const Stack = createStackNavigator();
 
@@ -20,7 +21,8 @@ const Stack = createStackNavigator();
 export default function () {
   return (
     <View style={styles.container}>
-      <ListScreen/>
+      {/* <ListScreen/> */}
+      <ButtonScreen/>
     </View>
   );
 }
