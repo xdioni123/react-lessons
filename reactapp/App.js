@@ -5,8 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MainScreen from './screen/MainScreen';
 import ListScreen from './screen/ListScreen';
 import ButtonScreen from './screen/ButtonScreen';
+import StudentsScreen from './screen/StudentsScreen';
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
 // export default function () {
 //   return (
@@ -18,11 +19,19 @@ const Stack = createStackNavigator();
 //   );
 // }
 
+// export default function () {
+//   return (
+//     <View style={styles.container}>
+//       {/* <ListScreen/> */}
+//       <ButtonScreen/>
+//     </View>
+//   );
+// }
+
 export default function () {
   return (
     <View style={styles.container}>
-      {/* <ListScreen/> */}
-      <ButtonScreen/>
+      <StudentsScreen/>
     </View>
   );
 }
