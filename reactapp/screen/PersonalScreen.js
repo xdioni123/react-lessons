@@ -1,24 +1,32 @@
 import React from "react";
-import { StyleSheet, Text, View, Image} from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import Person from "../components/Person";
 import Project from "../components/Project";
 
 const PersonalScreen = () => {
     return (
         <View style={styles.container}>
+
             <Text style={styles.title}>Personal Screen</Text>
 
             <Person name="Dion" />
 
-            <Project
-                name="My React Native App"
-                description="A project I am currently working on."
-            />
+            <Text style={styles.projectsTitle}>PROJECTS</Text>
 
-            <Project
-                name="Another Project"
-                description="Another project description."
-            />
+            <View style={styles.projects}>
+                <Project
+                    name="My React Native App"
+                    description="A project I am currently working on."
+                    image={require("../assets/project1.png")}
+                />
+
+                <Project
+                    name="Another Project"
+                    description="Another project description."
+                    image={require("../assets/project2.png")}
+                />
+            </View>
+
         </View>
     );
 };
@@ -26,14 +34,27 @@ const PersonalScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: 420,
+        alignSelf: "center",
         padding: 20,
         backgroundColor: "#fff",
     },
-
     title: {
         fontSize: 28,
         fontWeight: "bold",
         marginBottom: 20,
+    },
+
+    projectsTitle: {
+        fontSize: 20,
+        fontWeight: "bold",
+        marginBottom: 15,
+    },
+
+    projects: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        flexWrap: "wrap",
     },
 });
 
