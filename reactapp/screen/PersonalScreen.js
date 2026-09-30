@@ -34,11 +34,10 @@ const PersonalScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        width: 420,
-        alignSelf: "center",
         padding: 20,
         backgroundColor: "#fff",
     },
+
     title: {
         fontSize: 28,
         fontWeight: "bold",

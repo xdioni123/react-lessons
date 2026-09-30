@@ -24,34 +24,32 @@ const Project = ({ name, description, image }) => {
 
 const styles = StyleSheet.create({
     container: {
-        width: 180,
         backgroundColor: "#f2f2f2",
-        borderRadius: 12,
+        borderRadius: 15,
         marginBottom: 15,
         overflow: "hidden",
     },
 
     image: {
-        width: 180,
+        width: "100%",
         height: 160,
         resizeMode: "cover",
     },
 
     info: {
-        padding: 12,
+        padding: 15,
     },
 
     name: {
-        fontSize: 18,
+        fontSize: 20,
         fontWeight: "bold",
         marginBottom: 5,
     },
 
     description: {
-        fontSize: 14,
+        fontSize: 16,
         color: "#666",
     },
-    
 });
 
 export default Project;
