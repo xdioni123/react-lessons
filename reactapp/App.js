@@ -6,7 +6,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 // import ListScreen from './screen/ListScreen';
 // import ButtonScreen from './screen/ButtonScreen';
 // import StudentsScreen from './screen/StudentsScreen';
-import PersonalScreen from './screen/PersonalScreen';
+// import PersonalScreen from './screen/PersonalScreen';
+import CommentsScreen from './screen/CommentsScreen';
 
 // const Stack = createStackNavigator();
 
@@ -39,7 +40,7 @@ import PersonalScreen from './screen/PersonalScreen';
 
 
 const App = () => {
-    return <PersonalScreen />;
+    return <CommentsScreen />;
 };
 
 export default App;
