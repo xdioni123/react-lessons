@@ -7,7 +7,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 // import ButtonScreen from './screen/ButtonScreen';
 // import StudentsScreen from './screen/StudentsScreen';
 // import PersonalScreen from './screen/PersonalScreen';
-import CommentsScreen from './screen/CommentsScreen';
+// import CommentsScreen from './screen/CommentsScreen';
+import LocalScreen from './screen/LocalScreen';
 
 // const Stack = createStackNavigator();
 
@@ -40,7 +41,7 @@ import CommentsScreen from './screen/CommentsScreen';
 
 
 const App = () => {
-    return <CommentsScreen />;
+    return <LocalScreen />;
 };
 
 export default App;
