@@ -8,40 +8,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 // import StudentsScreen from './screen/StudentsScreen';
 // import PersonalScreen from './screen/PersonalScreen';
 // import CommentsScreen from './screen/CommentsScreen';
-import LocalScreen from './screen/LocalScreen';
+// import LocalScreen from './screen/LocalScreen';
+import ProductScreen from './screen/ProductScreen';
 
-// const Stack = createStackNavigator();
-
-// export default function () {
-//   return (
-//     <NavigationContainer>
-//       <Stack.Navigator>
-//         <Stack.Screen name="Home" component={MainScreen} />
-//       </Stack.Navigator>
-//     </NavigationContainer>
-//   );
-// }
-
-// export default function () {
-//   return (
-//     <View style={styles.container}>
-//       {/* <ListScreen/> */}
-//       <ButtonScreen/>
-//     </View>
-//   );
-// }
-
-// export default function () {
-//   return (
-//     <View style={styles.container}>
-//       <StudentsScreen/>
-//     </View>
-//   );
-// }
 
 
 const App = () => {
-    return <LocalScreen />;
+    return <ProductScreen />;
 };
 
 export default App;

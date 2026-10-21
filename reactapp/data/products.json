@@ -1,0 +1,21 @@
+
+[
+  {
+    "id": 1,
+    "name": "iPhone X",
+    "category": "Phone",
+    "price": "400€",
+    "stock": "Yes",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFoX_dsjTZTw8lj0H4FCa9-rOqIGI9K7vg16e_JuxZGg&s=10",
+    "description": "Lorem ipsum dolor sit amet"
+  },
+  {
+    "id": 2,
+    "name": "Samsung S9",
+    "category": "Phone",
+    "price": "300€",
+    "stock": "No",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuuUCpJo8OkCSxcSDMCGlVmjZfagURLD2LB89bhMDbOg&s=10",
+    "description": "Lorem ipsum dolor sit amet"
+  }
+]
