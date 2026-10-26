@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 // import MainScreen from './screen/MainScreen';
 // import ListScreen from './screen/ListScreen';
 // import ButtonScreen from './screen/ButtonScreen';
@@ -9,22 +8,25 @@ import { createStackNavigator } from '@react-navigation/stack';
 // import PersonalScreen from './screen/PersonalScreen';
 // import CommentsScreen from './screen/CommentsScreen';
 // import LocalScreen from './screen/LocalScreen';
-import ProductScreen from './screen/ProductScreen';
+// import ProductScreen from './screen/ProductScreen';
+import StackNavigator from './navigatior/StackNavigatior';
 
 
 
-const App = () => {
-    return <ProductScreen />;
-};
+export default function App() {
+  return(
+    <NavigationContainer>
+      <StackNavigator/>
+    </NavigationContainer>
+  );
+}
 
-export default App;
 
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
