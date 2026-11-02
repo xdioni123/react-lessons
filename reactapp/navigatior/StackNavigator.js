@@ -7,17 +7,26 @@ const Stack = createStackNavigator();
 
 const screenOptionStyle = {
     headerStyle: {
-        backgroundColor: "purple",
+        backgroundColor: "#ff6347",
     },
+    headerTintColor: "White"
 }
 
 const MainStackNavigator = ({navigation}) => {
     return(
         <Stack.Navigator screenOptions={screenOptionStyle}>
-            <StackScreen name = "Home" component={Home}/>
-            <StackScreen name = "About" component = {About}/>
+            <Stack.Screen name="Home" component={Home}/>
         </Stack.Navigator>
     );
 }
 
-export default MainStackNavigator;
+const AboutStackNavigator = ({navigation}) => {
+    return(
+        <Stack.Navigator screenOptions={screenOptionStyle}>
+            <Stack.Screen name = "About" component={About}/>
+        </Stack.Navigator>
+    );
+}
+
+
+export {AboutStackNavigator , MainStackNavigator};

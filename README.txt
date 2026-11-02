@@ -5,7 +5,8 @@ npm i -g @expo/ngrok (per telefon e para, 3)
 npx expo start --tunnel(per telefon)
 npx expo install react-native-screens react-native-safe-area-context (screens pages navigations/menagjment, 5)
 npm install @react-navigation/native @react-navigation/stack (library install for navigation, 4)
-
+npm install @expo/vector-icons
+npm install @react-navigation/bottom-tabs
     
 npx expo install --fix 
 npx expo-doctor
