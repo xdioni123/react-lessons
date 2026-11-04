@@ -7,6 +7,7 @@ npx expo install react-native-screens react-native-safe-area-context (screens pa
 npm install @react-navigation/native @react-navigation/stack (library install for navigation, 4)
 npm install @expo/vector-icons
 npm install @react-navigation/bottom-tabs
+npm install @react-navigation/drawer
     
 npx expo install --fix 
 npx expo-doctor
