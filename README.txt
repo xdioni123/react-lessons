@@ -15,3 +15,10 @@ if duplicated dependencies
 npm why react-native 
 npm dedupe 
 npx expo-doctor
+
+
+
+
+
+
+https://slimewiki.github.io/slime-character-wiki/(tensura)

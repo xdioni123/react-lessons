@@ -11,14 +11,14 @@ import { NavigationContainer } from '@react-navigation/native';
 // import CommentsScreen from './screen/CommentsScreen';
 // import LocalScreen from './screen/LocalScreen';
 // import ProductScreen from './screen/ProductScreen';
-import DrawerNavigator from './navigatior/DrawerNavigator';
-
+// import DrawerNavigator from './navigatior/DrawerNavigator';
+import ScreenSwiper from './screen/ScreenSwiper'
 
 
 export default function App() {
   return(
     <NavigationContainer>
-<DrawerNavigator/>
+<ScreenSwiper/>
     </NavigationContainer>
   );
 }
