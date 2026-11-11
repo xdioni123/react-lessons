@@ -1,44 +1,48 @@
 import React from "react";
-import {View, Text, Stylesheet, Button, Image} from 'react-native';
+import { View, StyleSheet, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
+import Icons from "../components/Icons";
 
 const Home = () => {
-    return(
-        <View style={styles.container}>
-            <View style={styles.sliderContainer}>
-                <Swiper
-                autoplay
-                activeDotColor='purple'
-                autoplayTimeout={5}
-                >
-                    <View style={styles.item}>
-                        <Image
-                        source={require('../assets/swiper1.png')}
-                        style={styles.ImageItem}
-                        resizeMode='cover'/>
-                    </View>
-                    <View style={styles.item}>
-                        <Image
-                        source={require('../assets/swiper1.png')}
-                        style={styles.ImageItem}
-                        resizeMode='cover'/>
-                    </View>
-                    <View style={styles.item}>
-                        <Image
-                        source={require('../assets/swiper1.png')}
-                        style={styles.ImageItem}
-                        resizeMode='cover'/>
-                    </View>
+  return (
+    <View style={styles.maincontainer}>
+      <View style={styles.sliderContainer}>
+        <Swiper autoplay activeDotColor='purple' autoplayTimeout={5}>
+          <View style={styles.item}>
+            <Image
+              source={require('../assets/swiper1.png')}
+              style={styles.ImageItem}
+              resizeMode='cover'
+            />
+          </View>
+          <View style={styles.item}>
+            <Image
+              source={require('../assets/swiper2.png')}
+              style={styles.ImageItem}
+              resizeMode='cover'
+            />
+          </View>
+          <View style={styles.item}>
+            <Image
+              source={require('../assets/swiper3.png')}
+              style={styles.ImageItem}
+              resizeMode='cover'
+            />
+          </View>
+        </Swiper>
+      </View>
 
-                </Swiper>
-            </View>
-        </View>
-    );
-}
+      <View style={styles.iconContainer}>
+        <Icons name="cellphone-iphone" iconsText="Iphone" />
+        <Icons name="android" iconsText="Android" />
+        <Icons name="laptop" iconsText="Laptop" />
+      </View>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
-
-  container: {
+  maincontainer: {
     flex: 1,
     backgroundColor: 'white',
   },
@@ -59,21 +63,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
-  iconContainers: {
-    width: '100%',
+  iconContainer: {
+    width: '90%',
     alignSelf: 'center',
     marginTop: 30,
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  title: {
-    marginTop: 35,
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 15,
-  },
 });
-
-
 
 export default Home;

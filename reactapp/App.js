@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
+
 // import { BottomTabBar } from '@react-navigation/bottom-tabs';
 // import BottomTabNavigator from './navigatior/TabNavigator';
 // import MainScreen from './screen/MainScreen';
@@ -12,14 +13,14 @@ import { NavigationContainer } from '@react-navigation/native';
 // import LocalScreen from './screen/LocalScreen';
 // import ProductScreen from './screen/ProductScreen';
 // import DrawerNavigator from './navigatior/DrawerNavigator';
-import ScreenSwiper from './screen/ScreenSwiper'
+// import ScreenSwiper from  './screen/ScreenSwiper';
+import Challange from './screen/Challange'
+
 
 
 export default function App() {
   return(
-    <NavigationContainer>
-<ScreenSwiper/>
-    </NavigationContainer>
+      <Challange/>
   );
 }
 
