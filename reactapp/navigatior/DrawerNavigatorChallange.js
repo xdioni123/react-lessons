@@ -12,16 +12,16 @@ const DrawerNavigator = () => {
             screenOptions={{
                 headerShown: false,
                 drawerStyle: {
-                    backgroundColor: "#241638",
+                    backgroundColor: "#343E52",
                     width: 260,
                 },
                 drawerActiveTintColor: "#FFFFFF",
-                drawerInactiveTintColor: "#CBBBDD",
+                drawerInactiveTintColor: "#C5CEDB",
                 drawerLabelStyle: {
                     fontSize: 16,
                     fontWeight: "600",
                 },
-                drawerActiveBackgroundColor: "#68439A",
+                drawerActiveBackgroundColor: "#20BFE0",
                 drawerItemStyle: {
                     borderRadius: 10,
                 },
@@ -39,7 +39,6 @@ const DrawerNavigator = () => {
                 name="About"
                 component={AboutStackNavigator}
             />
-
         </Drawer.Navigator>
     );
 };

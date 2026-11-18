@@ -14,13 +14,13 @@ import { NavigationContainer } from '@react-navigation/native';
 // import ProductScreen from './screen/ProductScreen';
 // import DrawerNavigator from './navigatior/DrawerNavigator';
 // import ScreenSwiper from  './screen/ScreenSwiper';
-import Challange from './screen/Challange'
+import ProductScreen from './screen/ProductScreen';
 
 
 
 export default function App() {
   return(
-      <Challange/>
+      <ProductScreen/>
   );
 }
 

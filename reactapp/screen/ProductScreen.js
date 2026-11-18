@@ -6,6 +6,7 @@ import {
   StyleSheet,
   FlatList,
   StatusBar,
+  Alert,
 } from "react-native";
 
 import data from "../data/products.json";
@@ -26,10 +27,21 @@ class ProductScreen extends React.Component {
     });
   }
 
+  openProductDetails = (item) => {
+    Alert.alert("Product clicked!", item.name);
+
+    this.props.navigation.navigate("ProductDetails", {
+      product: item,
+    });
+  };
+
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="#343E52"
+        />
 
         <View style={styles.header}>
           <Text style={styles.title}>Discover Products</Text>
@@ -39,7 +51,10 @@ class ProductScreen extends React.Component {
         </View>
 
         <View style={styles.sectionHeader}>
-          <Text style={styles.sectionTitle}>Top Products</Text>
+          <Text style={styles.sectionTitle}>
+            Top Products
+          </Text>
+
           <Text style={styles.productCount}>
             {this.state.products.length} items
           </Text>
@@ -58,6 +73,7 @@ class ProductScreen extends React.Component {
               stock={item.stock}
               img={item.image}
               desc={item.description}
+              onPress={() => this.openProductDetails(item)}
             />
           )}
         />
@@ -69,51 +85,56 @@ class ProductScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8fafc",
-    paddingTop: 15,
+    backgroundColor: "#F1F3F6",
   },
+
   header: {
-    paddingHorizontal: 20,
-    paddingTop: 15,
-    paddingBottom: 25,
+    backgroundColor: "#343E52",
+    paddingHorizontal: 25,
+    paddingTop: 25,
+    paddingBottom: 30,
   },
+
   title: {
     fontSize: 29,
     fontWeight: "bold",
-    color: "#111827",
+    color: "#FFFFFF",
     marginBottom: 7,
   },
+
   subtitle: {
     fontSize: 15,
-    color: "#64748b",
+    color: "#C5CEDB",
   },
+
   sectionHeader: {
-    paddingHorizontal: 20,
+    paddingHorizontal: 25,
+    marginTop: 22,
     marginBottom: 15,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
   },
+
   sectionTitle: {
-    fontSize: 19,
+    fontSize: 20,
     fontWeight: "bold",
-    color: "#1f2937",
+    color: "#343E52",
   },
+
   productCount: {
     fontSize: 13,
-    color: "#64748b",
+    color: "#64748B",
   },
-  
-list: {
-  paddingHorizontal: 20,
-  paddingBottom: 25,
-  alignItems: "center",
-},
-listContent: {
-  width: "100%",
-  maxWidth: 380,
-},
 
+  list: {
+    width: "100%",
+    maxWidth: 560,
+    alignSelf: "center",
+    paddingHorizontal: 20,
+    paddingBottom: 30,
+    alignItems: "stretch",
+  },
 });
 
 export default ProductScreen;
