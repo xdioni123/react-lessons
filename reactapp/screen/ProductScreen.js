@@ -1,13 +1,6 @@
 
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  FlatList,
-  StatusBar,
-  Alert,
-} from "react-native";
+import {View,Text,StyleSheet,FlatList,StatusBar,} from "react-native";
 
 import data from "../data/products.json";
 import Product from "../components/Product";
@@ -27,29 +20,25 @@ class ProductScreen extends React.Component {
     });
   }
 
-  openProductDetails = (item) => {
-    Alert.alert("Product clicked!", item.name);
-
-    this.props.navigation.navigate("ProductDetails", {
-      product: item,
-    });
-  };
-
   render() {
     return (
       <View style={styles.container}>
+
         <StatusBar
           barStyle="light-content"
           backgroundColor="#343E52"
         />
 
+        {/* Header */}
         <View style={styles.header}>
           <Text style={styles.title}>Discover Products</Text>
+
           <Text style={styles.subtitle}>
             Find the right product for you
           </Text>
         </View>
 
+        {/* Section Header */}
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>
             Top Products
@@ -60,6 +49,7 @@ class ProductScreen extends React.Component {
           </Text>
         </View>
 
+        {/* Product List */}
         <FlatList
           data={this.state.products}
           keyExtractor={(item) => String(item.id)}
@@ -73,16 +63,22 @@ class ProductScreen extends React.Component {
               stock={item.stock}
               img={item.image}
               desc={item.description}
-              onPress={() => this.openProductDetails(item)}
+              onPress={() =>
+                this.props.navigation.navigate("ProductDetails", {
+                  product: item,
+                })
+              }
             />
           )}
         />
+
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+
   container: {
     flex: 1,
     backgroundColor: "#F1F3F6",
@@ -90,13 +86,13 @@ const styles = StyleSheet.create({
 
   header: {
     backgroundColor: "#343E52",
-    paddingHorizontal: 25,
+    paddingHorizontal: 20,
     paddingTop: 25,
     paddingBottom: 30,
   },
 
   title: {
-    fontSize: 29,
+    fontSize: 27,
     fontWeight: "bold",
     color: "#FFFFFF",
     marginBottom: 7,
@@ -108,7 +104,7 @@ const styles = StyleSheet.create({
   },
 
   sectionHeader: {
-    paddingHorizontal: 25,
+    paddingHorizontal: 20,
     marginTop: 22,
     marginBottom: 15,
     flexDirection: "row",
@@ -128,13 +124,11 @@ const styles = StyleSheet.create({
   },
 
   list: {
-    width: "100%",
-    maxWidth: 560,
-    alignSelf: "center",
     paddingHorizontal: 20,
-    paddingBottom: 30,
-    alignItems: "stretch",
+    paddingBottom: 25,
+    alignItems: "center",
   },
+
 });
 
 export default ProductScreen;
